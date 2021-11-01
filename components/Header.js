@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -10,11 +9,6 @@ import HeaderStyles from '../styles/Header.module.scss';
 const Header = () => {
     return(
       <div>
-        <Head>
-          <title>Next Study</title>
-          <meta name="description" content="Created for study Next.js" />
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
         <AppBar position="sticky">
           <Toolbar variant="dense">
             <IconButton edge="start" color="inherit" aria-label="menu" sx={{ mr: 2 }}>

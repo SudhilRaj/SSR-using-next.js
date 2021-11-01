@@ -1,12 +1,13 @@
 import axios from 'axios';
 import { useRouter } from "next/router";
+import Meta from '../../../components/Meta';
 
 const List = ({item}) => {
     // const router = useRouter();
     // const {id} = router.query;
     return(
         <div style={{padding: '3rem'}}>
-            {item.id}
+            <Meta title={item.title.charAt(0).toUpperCase() + item.title.slice(1)} description={item.body}/>
             <h2>{item.title}</h2>
             <p>{item.body}</p>
         </div>
