@@ -31,13 +31,12 @@ export default function Home() {
             lists.map((list) => {
               return (
                 <a className={styles.card} key={list.id}>
-                  <h2>{list.title} &rarr;</h2>
-                  <p>{list.body}</p>
+                  <h2>{list.title.slice(0, 12)}{'...'} &rarr;</h2>
+                  <p>{list.body.slice(0, 80)}{'...'}</p>
                 </a>
               )
             })
           }
-          
         </div>
 
       </main>
