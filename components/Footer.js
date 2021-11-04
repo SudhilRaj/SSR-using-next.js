@@ -24,6 +24,11 @@ const Footer = () => {
                 border-top: 1px solid #eaeaea;
                 justify-content: center;
                 align-items: center;
+                background-color: blanchedalmond;
+                position: relative;
+                height: 100px;
+                margin-top: -100px;
+                clear: both;
             }
             
             .footer a {

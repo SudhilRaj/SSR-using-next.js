@@ -14,7 +14,7 @@ export default function Home({lists}) {
 //     .catch(error => {
 //       console.log(error);
 //     })
-//   })
+//   },[])
 
   return (
     <div className={styles.container}>

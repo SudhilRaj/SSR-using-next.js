@@ -7,7 +7,11 @@ const Layout = ({children}) => {
         <>
             <Meta />
             <Header />
-            {children}
+            <div style={{minHeight: 'calc(100vh - 48px)'}}>
+                <div style={{overflow: 'auto', paddingBottom: '100px'}}>
+                    {children}
+                </div>
+            </div>
             <Footer />
         </>
     )
